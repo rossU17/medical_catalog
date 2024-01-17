@@ -1,0 +1,45 @@
+<h1 style="color: rgb(22, 186, 0); text-align:center; font-size: 25px; text-decoration: underline rgb(4, 171, 4); font-family: Calibri Light;" mat-dialog-title>Edit Article</h1>
+
+<!-- <div mat-dialog-content style="display: inline; padding: 0px 10px; margin: auto;">  -->
+
+  <!-- <mat-form-field class="full-width-input">
+    <input matInput type="text" placeholder="id"
+      [(ngModel)]="editingStudent.id" required>
+  </mat-form-field>  -->
+  <div mat-dialog-content style="display: inline; padding: 0px 10px; margin: auto;"> 
+  <mat-form-field class="full-width-input">
+    <input matInput type="text" placeholder="title"
+      [(ngModel)]="editingStudent.title" required>
+  </mat-form-field>
+</div>
+
+
+  <div mat-dialog-content style="  display: inline; padding: 0px 10px; margin: auto;"> 
+  <mat-form-field class="full-width-input">
+    <input matInput type="text" placeholder="FIO"
+      [(ngModel)]="editingStudent.fio" required>
+  </mat-form-field>
+</div>
+  <div mat-dialog-content style="display: inline; padding: 0px 10px; margin: auto;"> 
+<mat-form-field class="full-width-input">
+  <input matInput type="text" placeholder="category"
+    [(ngModel)]="editingStudent.category" required>
+</mat-form-field>
+</div>
+<div mat-dialog-content style="display: inline; padding: 0px 10px; margin: auto;"> 
+<mat-form-field class="full-width-input">
+  <input matInput type="text" placeholder="country"
+  [(ngModel)]="editingStudent.country" required>
+</mat-form-field>
+</div>
+<div mat-dialog-content style="display: inline; padding: 0px 10px; margin: auto;"> 
+<mat-form-field class="full-width-input">
+  <input matInput type="text" placeholder="year"
+    [(ngModel)]="editingStudent.year" required>
+</mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button style="margin-left:auto;color:red; height:30px; font-family:Calibri Light;font-size: 20px; border: 1px solid grey; border-radius: 5px; cursor: pointer; padding: 15px 70px 30px 70px ; background: #e9dfdf" mat-raised-button (click)="onNoClick()">CANCEL</button>
+  <button style="margin-right:auto; color:green;height:30px; font-family:Calibri Light;font-size: 20px;border: 1px solid grey;border-radius: 5px; cursor: pointer; padding: 15px 70px 30px 70px; background: #e9dfdf" [mat-dialog-close]="editingStudent">SAVE</button>
+
+  

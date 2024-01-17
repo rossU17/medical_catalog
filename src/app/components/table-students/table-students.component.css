@@ -1,0 +1,22 @@
+h1 { 
+    font-family: 'Calibri Light';
+    letter-spacing: -1px;
+    font-size: 40px;
+    line-height: 60px;
+    text-shadow: 2px 1px rgb(248, 183, 255);
+    /* background-color: rgb(213, 242, 213); */
+  }
+  h2{
+    font-size: 14px; 
+    color:rgb(0, 0, 0);
+    padding-left: 30px;
+  }
+  p {
+    font-family: Arial;
+    font-size: 21px;
+    border: medium solid red;
+  }
+  td:first-child{
+   width: 80%; 
+    padding-left: 30px;
+  }

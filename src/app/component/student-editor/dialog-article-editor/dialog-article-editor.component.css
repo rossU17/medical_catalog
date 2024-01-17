@@ -1,0 +1,13 @@
+body{
+    width: 50px;
+}
+input[type="text"] {
+    width: 50px;
+    height: 50px;
+}
+textarea {
+    width: 20px;
+}
+textarea {
+    height: 50vh; /* 100% высоты видимой области экрана */
+}  

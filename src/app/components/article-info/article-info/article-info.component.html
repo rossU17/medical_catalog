@@ -1,0 +1,35 @@
+  <!--
+  <div *ngStyle="{'background-color':'red'}"></div>
+-->
+<!---->
+  <div *ngIf="students111">
+
+    <h2 style="text-align:center; color:rgb(14, 141, 0); text-decoration: underline;font-family:Calibri Light; font-size:35px">Have fun reading</h2>
+    
+    <!-- 
+    <h2 style="font-size: 14px; color:grey" >Based on the organization for economic cooperation and development (OECD) rubricator</h2> -->
+    <!-- <p><strong>ID:</strong> {{ students111.id }}</p> -->
+        
+           <p> <span style="color:black; font-family:Calibri Light; font-size: 20px; text-decoration: underline  rgb(1, 174, 1); letter-spacing: 2px;">Title:</span>
+            <span style="text-align: left; color: grey;font-family:Calibri Light; font-size: 24px; ">{{ students111.title}}</span></p>
+   
+       <!-- <p> <strong>
+         <span style="color:red;">Fio:</strong></span> <span style="color: grey;font-family:Calibri Light; font-size: 20px; text-decoration: underline"></span>;"></span>
+         {{ students111.fio }}</span></p>
+    -->
+        <p> <span style="color:black; font-family:Calibri Light; font-size: 20px; text-decoration: underline  rgb(1, 174, 1); letter-spacing: 2px;">FIO:</span>
+            <span style="color: grey;font-family:Calibri Light; font-size: 20px; ">{{ students111.fio}}</span></p>
+        <p> <span style="color:black; font-family:Calibri Light; font-size: 20px; text-decoration: underline  rgb(1, 174, 1); letter-spacing: 2px;">Category:</span>
+            <span style="color: grey;font-family:Calibri Light; font-size: 20px; ">{{ students111.category}}</span></p>
+        <p> <span style="color:black; font-family:Calibri Light; font-size: 20px; letter-spacing: 2px; text-decoration: underline  rgb(1, 174, 1);">Country:</span>
+            <span style="color: grey;font-family:Calibri Light; font-size: 20px; ">{{ students111.country}}</span></p>
+        <p> <span style="color:black; font-family:Calibri Light; font-size: 20px; text-decoration: underline  rgb(1, 174, 1); letter-spacing: 2px;">City:</span>
+            <span style="color: grey;font-family:Calibri Light; font-size: 20px; ">{{ students111.city}}</span></p>
+        <p> <span style="color:black; font-family:Calibri Light; font-size: 20px; letter-spacing: 2px; text-decoration: underline  rgb(1, 174, 1);">Year:</span>
+            <span style="color: grey;font-family:Calibri Light; font-size: 20px; ">{{ students111.year}}</span></p>
+        <p> <span style="color:black; font-family:Calibri Light; font-size: 20px; letter-spacing: 2px; text-decoration: underline  rgb(1, 174, 1);">Text:</span></p>
+            <span style="color: grey;font-family:Calibri Light; font-size: 20px; white-space: break-spaces; text-align:right">{{ students111.text}}</span>                         
+
+  </div>
+  <button style="position: relative; left: 50%; transform: translate(-50%, 0);color:rgb(89, 175, 102); height:30px; font-family:Calibri Light; font-size: 20px; border: 1px solid black; padding: 15px 70px 30px 70px; border-radius: 5px; cursor: pointer; background: rgb(217, 213, 213);" mat-raised-button (click)="onNoClick()">Cancel</button>
+

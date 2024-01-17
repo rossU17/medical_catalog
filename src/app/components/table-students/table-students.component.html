@@ -1,0 +1,55 @@
+
+<h1 style="text-align:center; color:green; border-radius: 6px; border:10px double rgb(29, 114, 88); background: #e9dfdf;">Catalog of Scientific Medical Articles</h1>
+<h2 style="font-size: 14px; color:grey; font-family: Calibri Light;" >Based on the organization for economic cooperation and development (OECD) rubricator. Copying is allowed in the form of links to the site.</h2>
+
+<table>
+  <!-- <thead>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Fio</th>
+    <th>Category</th>
+    <th>Country</th>
+    <th>Year</th>
+
+  </thead> -->
+  <tbody>
+    <tr *ngFor = "let student of students" >
+      <!-- <td>{{student.id}}</td> --> 
+     <!-- <td>{{student.title}}</td> -->
+       <!-- <td>{{student.fio}}</td> 
+      <td>{{student.category}}</td> 
+       <td>{{student.country}}</td>
+      <td>{{student.year}}</td> -->
+      <!-- <td><button (click) = "editStudent(student)">Edit</button></td>
+      <td><button (click) = "deleteStudent(student)">Delete</button></td> -->
+      <td><button style=" width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        width: 90%; margin-right:auto;color:rgb(0, 0, 0); text-align:left; height:30px; font-family:Calibri Light;font-size: 20px;border: 1px solid grey;border-radius: 5px; cursor: pointer; padding: 18px 80px 50px 70px; background: #e9dfdf" (click) = "openArticle(student)"> <td>{{student.title}}</td>
+        <!-- <td>{{student.fio}}</td> 
+        <td>{{student.category}}</td>
+        <td>{{student.country}}</td>
+        <td>{{student.year}}</td>  -->
+      </button></td>
+        <td><button style=" width: 100%;
+          table-layout: fixed;
+          border-collapse: collapse;
+          width: 5%; margin-right:auto;color:green;height:30px; font-family:Calibri Light;font-size: 20px;border: 1px solid grey;border-radius: 5px; cursor: pointer; padding: 10px 50px 30px 20px; background: #e9dfdf "(click) = "editStudent(student)">Edit</button></td>
+        <td><button style="width: 100%;
+          table-layout: fixed;
+          border-collapse: collapse;
+          width: 5%; margin-right:auto;color:green;height:30px; font-family:Calibri Light;font-size: 20px;border: 1px solid grey;border-radius: 5px; cursor: pointer; padding: 10px 70px 30px 20px; background:#e9dfdf "(click) = "deleteStudent(student)">Delete</button></td>
+           <td><button style=" width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 5%; margin-right:auto;color:green;height:30px; font-family:Calibri Light;font-size: 20px;border: 1px solid grey;border-radius: 5px; cursor: pointer; padding: 5px 50px 60px 20px; background: #e9dfdf "(click) = " editTextArticleStudent(student)">Edit Text</button></td>
+
+    </tr>
+  </tbody>
+</table>
+<br>
+<div>
+ <td> 
+<button style="margin-right:auto;color:green;height:30px; font-family:Calibri Light ;font-size: 20px;border: 1px solid grey;border-radius: 5px; cursor: pointer; padding: 15px 70px 40px 70px; background: #e9dfdf " (click) = "addNewStudent()" > Add new article</button></td>
+
+</div>

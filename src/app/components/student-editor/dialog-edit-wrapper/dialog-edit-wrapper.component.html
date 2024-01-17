@@ -1,0 +1,46 @@
+<h1 style="color: rgb(22, 186, 0); text-align:center; font-size: 25px; text-decoration: underline rgb(4, 171, 4); font-family: Calibri Light; font-style: normal;" mat-dialog-title>Add New Article</h1>
+
+<!-- <head> -->
+  
+<div mat-dialog-content style=" display: inline; padding: 10px; margin: auto;">
+
+  <mat-form-field class="full-width-input">
+    <input matInput type="text" placeholder="Name of article"
+      [(ngModel)]="editingStudent.title" required>
+  </mat-form-field> </div>
+  
+
+  <div mat-dialog-content style="color: rgb(125, 125, 125); display: inline; padding: 10px; margin: auto;">
+
+  <mat-form-field class="full-width-input">
+    <input matInput type="text" placeholder="FIO of author"
+      [(ngModel)]="editingStudent.fio" required>
+  </mat-form-field> </div>
+
+  <div mat-dialog-content style="color: rgb(134, 134, 134); display: inline; padding: 10px; margin: auto;">
+
+  <mat-form-field class="full-width-input">
+    <input matInput type="text" placeholder="Category of article"
+      [(ngModel)]="editingStudent.category" required>
+  </mat-form-field> </div>
+
+<div mat-dialog-content style="color: rgb(125, 125, 125); display: inline; padding: 10px; margin: auto;">
+ 
+  <mat-form-field class="full-width-input">
+    <input matInput type="text" placeholder="Country of article"
+      [(ngModel)]="editingStudent.country" required>
+  </mat-form-field></div>
+
+  <div mat-dialog-content style="color: rgb(134, 134, 134); display: inline; padding: 10px; margin: auto;">
+
+  <mat-form-field class="full-width-input">
+    <input matInput type="text" placeholder="Year of article"
+      [(ngModel)]="editingStudent.year" required>
+  </mat-form-field> </div>
+
+<div mat-dialog-actions>
+  <button style="margin-left:auto;color: rgb(255, 0, 0); height:30px; font-family:Calibri Light;font-size: 20px; border: 1px solid black; border-radius: 5px; cursor: pointer; padding: 15px 70px 30px 70px ; background: #e9dfdf" mat-raised-button (click)="onNoClick()">CANCEL</button>
+  <button style="margin-left:auto;color:rgb(69, 187, 0); height:30px; font-family:Calibri Light;font-size: 20px; border: 1px solid black; border-radius: 5px; cursor: pointer; padding: 15px 70px 30px 70px ; background: #e9dfdf" [mat-dialog-close]="editingStudent">ADD</button>
+</div>
+
+
